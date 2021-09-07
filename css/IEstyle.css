@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.clearfix::after {
+    content: "";
+    clear:both;
+    display:table;
+}
