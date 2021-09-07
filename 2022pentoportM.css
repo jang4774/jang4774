@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* 2022 Pentaport Mobile css */
+body {
+    min-width: 320px;
+}
+.inner {
+    width:95%;
+}
+
+body .cover, iframe {
+    display: none;
+}
+h1 {
+    padding-top:50px;
+    margin-bottom: 30px;
+}
+/* header -------------------------------------- */
+header {
+    /* height:100vh; */
+}
+header .headerM {
+    display: block;
+    background:#e82d6a;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .headerM .logoM {
+    background: url(img/pentaport_logo.svg) no-repeat;
+    width:250px;
+    height: 48px;
+    margin: 10px 10px 5px;
+    text-indent: -9000px;
+    overflow: hidden;
+}
+header .headerM .fa-bars {
+    color: white;
+    font-size:30px;
+    margin: 15px;
+}
+header .mainM {
+    background: url(img/2021Pentaport_poster.jpg) 50% 0 no-repeat;
+    background-size:contain;
+    /* width:100%; */
+    height:100%;
+}
+/* ---------------- */
+
+header nav .gnb .inner {
+    flex-wrap: wrap;
+}
+header nav {
+    background-color:#e82d6a ;
+    background-image: url(img/pentaport_icon_white10p.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size:80%;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:-100%;
+    transition: all 0.5s;
+}
+header nav.on {
+    left:0;
+}
+
+header nav i.fa-times {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    margin:15px;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: 200;
+}
+
+header nav .menu {
+    display: flex;
+    flex-direction:column;
+    padding-top: 170px;
+}
+header nav .gnb .inner .menu a {
+    margin-left:30px;
+    line-height: 55px;
+}
+header nav .gnb .inner {
+    display: block;
+    /* flex해체 */
+
+}
+header nav .gnb .inner .logo {
+    width:90%;
+    height:65px;
+    position: absolute;
+    top:60px;
+    left:10px;
+
+}
+
+header nav .gnb .inner::after {
+    content:"";
+    width: 100%;
+    top: 130px;
+}
+/* hover이벤트 제거 */
+header nav .snb .inner ul li a:hover {
+    color:unset;
+}
+header nav:hover .snb {
+    height:0;
+}
+header nav:hover .gnb .inner .menu::after {
+    display:none;
+}
+header nav .gnb .inner .menu a:hover::after {
+    width:0;
+}
+header nav:hover .gnb .inner::after {
+    display:inline;
+}
+/* h1 */
+h1 {
+    /* border-bottom: 3px solid #e82d6a; */
+    margin: 10px 0px 10px;
+    font-size: 10vw;
+    font-size:40px;
+}
+/* sec01 ------------------------------------ */
+.sec01 .inner {
+    margin-bottom:0;
+}
+.sec01 h1::after {
+    display:none;
+}
+.sec01 .date h2 {
+    font-size: 8vw;
+}
+.sec01 .headliner {
+    display:none;
+}
+.sec01 .date .lineup {
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    margin-bottom:50px;
+}
+.sec01 .date .lineup h3:nth-of-type(1)::before,
+.sec01 .date .lineup h3:nth-of-type(2)::before,
+.sec01 .date .lineup h3:nth-of-type(3)::before {
+    display:none;
+}
+
+.sec01 .date .lineup .moon:first-letter::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(img/moon.svg) no-repeat;
+    position:absolute;
+    left:0px;
+    top:0px;
+
+}
+
+.sec01 .date .lineup h3 {
+    font-size: 20px;
+    font-size: 5vw;
+    padding:0;
+    margin-bottom: 5px;
+    height: 35px;
+    line-height: 35px;
+}
+.sec01 .date .lineup h3::after {
+    width: 35px;
+    height: 35px;
+}
+.sec01 .date .lineup img {
+    width:80%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.sec01 .date .swiper-button-prev {
+    left: 10px;
+    width:3.5vw
+} 
+.sec01 .date .swiper-button-next {
+    right: 10px;
+    width:3.5vw
+}
+.sec01 .date .lineup .line1, .line2, .line3, .line4, .line5 {
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    font-weight: 300;
+}
+.sec01 .date .lineup .line1 {
+    font-size: 6vw;
+}
+.sec01 .date .lineup .line2 {
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+}
+.sec01 .date .lineup .line3 {
+    font-size: 5vw;
+}
+.sec01 .date .lineup .line4 {
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+}
+.sec01 .date .lineup .line5 {
+    font-size: 3.5vw;
+    line-height: 6vw;
+}
+/* sec02 -------------------------- */
+.sec02 .inner {
+    padding:20px 0 40px;
+}
+.sec02 .poster {
+    display:none;
+}
+.sec02 .notice {
+    width:100%;
+}
+.sec02 div.swiper-button-prev {
+    top:50%;
+} 
+.sec02 .swiper-slide {
+    height:450px;
+}
+/* sec03 ---------------------------- */
+
+.sec03 h1::after {
+    display: none;
+}
+.sec03 .timeflex .time {
+    display: none;
+}
+.sec03 .tab {
+    width:100%;
+    margin:0;
+}
+.sec03 .tab ul::after {
+    display:none;
+    /* content:"\203B 타임테이블 내 뮤지션을 터치 하시면 정확한 시간을 확인하실 수 있습니다.";
+    line-height: 6vw;
+    top:-13vw;
+    left:0; */
+}
+.sec03 .tab ul li {
+    height:35px;
+    line-height: 35px;
+    font-size: 5.5vw;
+    padding:0 10px;
+}
+.sec03 .tab .stageTitle {
+    padding-left: 0;
+    font-size: 5vw;
+    text-align: center;
+    height:15vw;
+    line-height: 6vw;
+    padding-top:5px;
+}
+.sec03 .tab .stageTitle div:nth-child(1)::before,
+.sec03 .tab .stageTitle div:nth-child(2)::before,
+.sec03 .tab .stageTitle div:nth-child(3)::before {
+    display:none;
+}
+.sec03 .tab .stageTitle::after{
+    display: none;
+}
+.sec03 .tab .conBox .table1 h4, .table2 h4 {
+    font-size: 5vw;
+}
+.sec03 .tab .conBox .table1 p, .table2 p {
+    font-size: 4vw;
+}
+.sec03 .tab .conBox .table3 h4, p {
+    font-size: 4vw;
+}
+/* sec04 ------------------- */
+.sec04 { 
+    height:auto;
+    background:#ddd url(img/bg_pattern_white.svg);
+    background-size: cover;
+}
+.sec04 h1::after {
+    display: none;
+}
+.sec04 .s04flex {
+    flex-direction: column;
+}
+.sec04 .price {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.sec04 .price div {
+    font-size:6vw;
+    line-height: 10vw;
+}
+.sec04 .price div span::after {
+    height:6vw;
+    width:6vw;
+}
+
+.sec04 .site {
+    height:unset;
+    padding: 15px 0;
+    margin:0 0 50px;
+
+}
+.sec04 .site a img {
+    width:80px;
+}
+.sec04 h2:last-of-type {
+    display:none;
+}
+.sec04 .infoBoxBt {
+    display:block;
+    text-align:center;
+    background:#e82d6a;
+    color:#fff;
+}
+.sec04 .infoBox {
+    display:none;
+    height:auto;
+    padding:0 10px;
+}
+.sec04 .closeInfoBox {
+    display:block;
+    background:#e82d6a;
+    color:#fff;
+    text-align:center;
+    display:none;
+}
+/* sec05 ------------------ */
+.sec05 {
+    /* display:none; */
+}
+/* footer */
+footer {
+    height:unset;
+}
+footer .inner {
+    display:flex;
+    flex-direction:column;
+}
+
+footer .partners a img {
+    height:20px;
+}
+footer .copyright {
+    margin:0 0 5px;
+}
+
+.scroll {
+    bottom:40px;
+}
